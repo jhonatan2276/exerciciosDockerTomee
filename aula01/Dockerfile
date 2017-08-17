@@ -1,6 +1,1 @@
-# Selecione uma imagem de referência em hub.docker.com
-FROM [repositório]:[release]
-
-# Adicione arquivos e/ou referências necessárias
-ADD 
-
+FROM tomee:8-jre-1.7.2-webprofile
