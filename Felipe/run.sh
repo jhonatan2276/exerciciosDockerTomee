@@ -1,5 +1,7 @@
-docker rm -f mysqlfelipe || true
-docker rm -f tomeefelipe || true
+#old run que puxava dois dockerfiles diferentes e executava um tomee com link pro mysql
 
-docker run --name mysqlfelipe -e MYSQL_ROOT_PASSWORD=felipe -d mysql:5.7
-docker run --name tomeefelipe --link mysqlfelipe:mysqlfelipe -p 8080:8080 -d tomee:8-jre-1.7.2-webprofile
+#docker rm -f mysqlfelipe || true
+#docker rm -f tomeefelipe || true
+
+#docker run --name mysqlfelipe -e MYSQL_ROOT_PASSWORD=felipe -d mysql:5.7
+#docker run --name tomeefelipe --link mysqlfelipe:mysqlfelipe -p 8080:8080 -d tomee:8-jre-1.7.2-webprofile
