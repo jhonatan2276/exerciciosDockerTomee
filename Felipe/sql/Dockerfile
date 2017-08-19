@@ -1,2 +1,3 @@
-#FROM https://hub.docker.com/_/mysql/
-FROM mysql:5.7
+FROM mysql:8.0.1
+
+COPY database.sql /docker-entrypoint-initdb.d
