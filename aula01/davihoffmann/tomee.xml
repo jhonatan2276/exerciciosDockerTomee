@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+	<Resource id="AppTestDs" type="DataSource"
+		JdbDriver = com.mysql.Driver
+		JdbcUrl = jdbc:mysql://mysql-unidavi:3306/unidavi
+		UserName = root
+		Password = unidavi
+	</Resource>
+</tomee>
