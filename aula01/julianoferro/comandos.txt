@@ -1,0 +1,32 @@
+sudo docker ps
+sudo docker run -p 81:80 nginx
+clear
+docker run 81:80 nginx
+sudo docker run 81:80 nginx
+sudo docker run -p 81:80 nginx
+clear
+sudo docker ps -a
+sudo docker start c8
+sudo docker ps -a
+sudo docker kill 44
+sudo docker rm 44 --force
+sudo docker ps -a
+sudo docker rm b7 --force
+sudo docker rm d0 --force
+sudo docker rm 2f --force
+sudo docker ps -a
+sudo docker ps
+clear
+sudo docker ps
+sudo docker rm c8 --force
+sudo docker ps
+sudo docker ps -a
+clear
+sudo docker run -p 81:80 nginx
+sudo docker ps
+sudo docker ps -a
+sudo docker rm cc --force
+sudo docker run -p 81:80 nginx
+sudo docker ps -a
+sudo docker start b2
+sudo docker ps
