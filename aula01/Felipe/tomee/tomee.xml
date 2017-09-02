@@ -7,7 +7,7 @@
 	<Resource id="AppTestDs" type="DataSource">
 	    	JdbcDriver = com.mysql.jdbc.Driver
     		JdbcUrl = jdbc:mysql://mysql-felipe:3306/felipe
-	    	UserName = felipe
+	    	UserName = root
     		Password = felipe
 	</Resource>
 </tomee>
