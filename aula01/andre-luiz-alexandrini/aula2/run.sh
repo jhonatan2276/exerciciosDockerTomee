@@ -1,11 +1,11 @@
-docker rm -f $(docker ps -a -q)
+ docker rm -f $(docker ps -a -q)
 
 docker run -d --name mysql-andre \
 	-h mysql-andre \
 	-p 3306:3306 \
-	-e MYSQL_ROOT_PASSWORD=andre \
-	-e MYSQL_DATABASE=andre \
-	mysql-andre
+	-e MYSQL_ROOT_PASSWORD=root \
+	-e MYSQL_DATABASE=root \
+	mysql-andre 
 
 sleep 3
 
