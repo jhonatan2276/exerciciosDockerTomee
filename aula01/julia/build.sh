@@ -1,10 +1,10 @@
 
-docker rmi -f tomee-soujava
-docker rmi -f mysql-soujava
+docker rmi -f tomee-julia
+docker rmi -f mysql-julia
 
 cp ../apptest/target/apptest-1.0.war apptest.war
 
-docker build -t tomee-soujava .
+docker build -t tomee-julia .
 
 cd mysql
-docker build -t mysql-soujava .
+docker build -t mysql-julia .

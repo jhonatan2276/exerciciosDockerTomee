@@ -1,15 +1,15 @@
 docker rm -f $(docker ps -a -q)
 
-docker run -d --name mysql-soujava \
-	-h mysql-soujava \
+docker run -d --name mysql-julia \
+	-h mysql-julia \
 	-p 3306:3306 \
-	-e MYSQL_ROOT_PASSWORD=soujava \
-	-e MYSQL_DATABASE=soujava \
-	mysql-soujava
+	-e MYSQL_ROOT_PASSWORD=root \
+	-e MYSQL_DATABASE=root \
+	mysql-julia
 
 sleep 3
 
-docker run -d --name tomee-soujava \
-	-h tomee-soujava \
-	--link mysql-soujava:mysql-soujava \
--p 8080:8080 tomee-soujava
+docker run -d --name tomee-julia \
+	-h tomee-julia \
+	--link mysql-julia:mysql-julia \
+-p 8080:8080 tomee-julia
